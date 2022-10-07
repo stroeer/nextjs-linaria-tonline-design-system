@@ -1,6 +1,6 @@
 import { css } from "@linaria/core";
 
-export const color = css`
+export const defaults = css`
   :global() {
     body {
       font-family: var(--font-sans);
