@@ -1,5 +1,31 @@
 import { css } from "@linaria/core";
 
+const fontFace = css`
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/Roboto-Regular.woff2") format("woff2");
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/Roboto-Bold.woff2") format("woff2");
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    src: url("/fonts/Roboto-Light.woff2") format("woff2");
+    font-display: fallback;
+  }
+`;
+
 const color = css`
   --color-magenta: #e20074;
   --color-salemsfur: #171b26;
@@ -35,30 +61,6 @@ const color = css`
 `;
 
 const font = css`
-  @font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    src: url("/fonts/Roboto-Regular.woff2") format("woff2");
-    font-display: fallback;
-  }
-
-  @font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    src: url("/fonts/Roboto-Bold.woff2") format("woff2");
-    font-display: fallback;
-  }
-
-  @font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    src: url("/fonts/Roboto-Light.woff2") format("woff2");
-    font-display: fallback;
-  }
-
   --font-sans: "Roboto", sans-serif;
   --font-weight-bold: 700;
   --font-weight-light: 300;
@@ -82,7 +84,7 @@ const lineHeight = css`
   --line-height-13: 1.3;
   --line-height-14: 1.4;
   --line-height-15: 1.5;
-  --line-height-16: 1.6; // deviation from the DS, we needed to add 1.6 too for the <Button />
+  --line-height-16: 1.6;
   --line-height-17: 1.7;
 `;
 
