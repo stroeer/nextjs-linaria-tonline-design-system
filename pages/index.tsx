@@ -4,13 +4,13 @@ import "../design/tokens";
 import "../design/reset";
 import "../design/defaults";
 
-import type { FC, ReactNode } from "react";
+import type { FC, PropsWithChildren } from "react";
 import type { NextPage } from "next";
 
 /**
  * todo can't put css`` into styled`` css
  */
-const Title: FC<{ children?: ReactNode | undefined }> = ({ children }) => {
+const Title: FC<PropsWithChildren> = ({ children }) => {
   return <h1 className={cx(xlarge)}>{children}</h1>;
 };
 

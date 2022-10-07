@@ -79,15 +79,15 @@ export const font = css`
 export const fontSize = css`
   :global() {
     :root {
-      --font-size-10: 10px;
-      --font-size-12: 12px;
-      --font-size-14: 14px;
-      --font-size-16: 16px;
-      --font-size-18: 18px;
-      --font-size-22: 22px;
-      --font-size-28: 28px;
-      --font-size-40: 40px;
-      --font-size-72: 72px;
+      --font-size-10: ${10 / 16}rem;
+      --font-size-12: ${12 / 16}rem;
+      --font-size-14: ${14 / 16}rem;
+      --font-size-16: ${16 / 16}rem;
+      --font-size-18: ${18 / 16}rem;
+      --font-size-22: ${22 / 16}rem;
+      --font-size-28: ${28 / 16}rem;
+      --font-size-40: ${40 / 16}rem;
+      --font-size-72: ${72 / 16}rem;
     }
   }
 `;
