@@ -17,6 +17,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@linaria/atomic": "4.1.4",
     "@linaria/server": "4.0.0",
     "@linaria/webpack-loader": "4.1.4",
     "@types/node": "18.8.3",

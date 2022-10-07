@@ -1,4 +1,4 @@
-import { css } from "@linaria/core";
+import { css } from "@linaria/atomic";
 
 export const large = css`
   font-size: var(--font-size-18);

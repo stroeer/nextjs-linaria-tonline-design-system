@@ -1,38 +1,17 @@
-import { styled } from "@linaria/react";
-import { css } from "@linaria/core";
+import { cx } from "@linaria/core";
+import { xlarge } from "../design/text/headline";
+import "../design/tokens";
 
+import type { FC, ReactNode } from "react";
 import type { NextPage } from "next";
 
-css`
-  :global() {
-    body {
-      background: black;
-      font-family: sans-serif;
-    }
-  }
-`;
-
-const uppercase = css`
-  text-transform: uppercase;
-`;
-
-const Title = styled.h1`
-  font-size: 2rem;
-`;
-
-const Container = styled.div<{ color: string }>`
-  border: 1px solid ${props => props.color};
-
-  ${Title} {
-    color: ${props => props.color};
-  }
-`;
+const Title: FC<{ children?: ReactNode | undefined }> = ({ children }) => <h1 className={cx(xlarge)}>{children}</h1>;
 
 const Home: NextPage = () => {
   return (
-    <Container color="red">
-      <Title className={uppercase}>hello world</Title>
-    </Container>
+    <div>
+      <Title>hello world</Title>
+    </div>
   );
 };
 
