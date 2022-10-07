@@ -54,13 +54,13 @@ export const color = css`
       --color-inherit: inherit;
 
       @media (prefers-color-scheme: dark) {
-        --color-salemsfur: var(--color-alpine);
-        --color-snow: var(--color-black);
-        --color-trout: var(--color-cadetBlue);
-        --color-manatee: var(--color-cadetBlue);
-        --color-botticelli: var(--color-riverBed);
-        --color-whitelilac: var(--color-ebony);
-        --color-alpine: var(--color-salemsfur);
+        --color-salemsfur: #f7f9fc;
+        --color-snow: #0a0c14;
+        --color-trout: #a3aabf;
+        --color-manatee: #a3aabf;
+        --color-botticelli: #495166;
+        --color-whitelilac: #262c3b;
+        --color-alpine: #171b26;
       }
     }
   }

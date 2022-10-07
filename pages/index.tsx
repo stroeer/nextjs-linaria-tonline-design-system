@@ -1,6 +1,7 @@
 import { cx } from "@linaria/core";
 import { xlarge } from "../design/text/headline";
 import "../design/tokens";
+import "../design/defaults";
 
 import type { FC, ReactNode } from "react";
 import type { NextPage } from "next";
