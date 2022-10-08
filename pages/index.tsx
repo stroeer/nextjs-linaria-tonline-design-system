@@ -1,8 +1,6 @@
-import { styled } from "../design/styled";
-import { headline } from "../design/headline";
-import "../design/tokens";
-import "../design/reset";
-import "../design/defaults";
+import { styled } from "design/styled";
+import { headline } from "design/headline";
+import "design/bootstrap";
 
 import type { NextPage } from "next";
 
