@@ -1,23 +1,19 @@
-import { cx } from "@linaria/core";
-import { xlarge } from "../design/text/headline";
+import { styled } from "@linaria/react";
+import { headline } from "../design/text";
 import "../design/tokens";
 import "../design/reset";
 import "../design/defaults";
 
-import type { FC, PropsWithChildren } from "react";
 import type { NextPage } from "next";
 
-/**
- * todo can't put css`` into styled`` css
- */
-const Title: FC<PropsWithChildren> = ({ children }) => {
-  return <h1 className={cx(xlarge)}>{children}</h1>;
-};
+const Title2 = styled.h1`
+  ${headline.xlarge}
+`;
 
 const Home: NextPage = () => {
   return (
     <div>
-      <Title>hello world</Title>
+      <Title2>hello world</Title2>
     </div>
   );
 };
