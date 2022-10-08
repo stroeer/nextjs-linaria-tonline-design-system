@@ -1,19 +1,17 @@
-import { styled } from "@linaria/react";
-import { headline } from "../design/text";
+import { styled } from "../design/styled";
+import { headline } from "../design/headline";
 import "../design/tokens";
 import "../design/reset";
 import "../design/defaults";
 
 import type { NextPage } from "next";
 
-const Title2 = styled.h1`
-  ${headline.xlarge}
-`;
+const Title = styled("h1", headline.xlarge);
 
 const Home: NextPage = () => {
   return (
     <div>
-      <Title2>hello world</Title2>
+      <Title>hello world</Title>
     </div>
   );
 };
