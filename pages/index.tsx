@@ -4,12 +4,12 @@ import "design/bootstrap";
 
 import type { NextPage } from "next";
 
-const Title = styled("h1", headline.xlarge);
+const Title = styled("a", headline.xlarge);
 
 const Home: NextPage = () => {
   return (
     <div>
-      <Title>hello world</Title>
+      <Title href="/">hello world</Title>
     </div>
   );
 };
