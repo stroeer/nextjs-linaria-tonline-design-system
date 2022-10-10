@@ -1,10 +1,16 @@
-import { styled } from "design/styled";
-import { headline } from "design/headline";
+import { styled } from "@linaria/atomic";
+import { headline } from "design/text.objectStyles";
 import "design/bootstrap";
 
 import type { NextPage } from "next";
 
-const Title = styled("a", headline.xlarge);
+const Title = styled.h1`
+  ${headline.xlarge}
+
+  &:hover {
+    color: red;
+  }
+`;
 
 const Home: NextPage = () => {
   return (
