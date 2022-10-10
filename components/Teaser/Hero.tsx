@@ -1,8 +1,9 @@
 import NextImage from "next/image";
-import { styled, css } from "@linaria/atomic";
+import { styled } from "@linaria/atomic";
 import { headline, kicker } from "design/text";
 import { pull } from "design/layout";
 import { background } from "design/color";
+import { border } from "design/border";
 
 import type { FC } from "react";
 import type { StaticImageData } from "next/image";
@@ -23,8 +24,8 @@ interface Media {
 
 const Article = styled.article`
   display: grid;
-  grid-template-rows: auto auto;
   grid-template-columns: var(--space-24) 1fr var(--space-24);
+  grid-template-rows: repeat(2, auto);
 
   & > *:nth-child(1) {
     grid-area: 1 / 1 / 2 / 4;
@@ -37,7 +38,10 @@ const Article = styled.article`
 
 const Text = styled.div`
   position: relative;
-  ${pull.up24} ${background.snow};
+  padding: var(--space-24);
+  ${pull.up24}
+  ${background.snow};
+  ${border.radius8}
 `;
 
 const Kicker = styled.p`
