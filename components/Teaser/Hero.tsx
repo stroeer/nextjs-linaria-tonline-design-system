@@ -1,9 +1,10 @@
 import NextImage from "next/image";
-import { styled } from "@linaria/atomic";
+import { styled, css } from "@linaria/atomic";
 import { headline, kicker } from "design/text";
 import { pull } from "design/layout";
+import { background } from "design/color";
 
-import type { FC } from "react";
+import type { FC, CSSProperties } from "react";
 import type { StaticImageData } from "next/image";
 
 interface HeroTeaserProps {
@@ -20,8 +21,23 @@ interface Media {
   height: number;
 }
 
+const Article = styled.article`
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: var(--space-24) 1fr var(--space-24);
+
+  & > *:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 4;
+  }
+
+  & > *:nth-child(2) {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+`;
+
 const Text = styled.div`
-  ${pull.up24}
+  position: relative;
+  ${pull.up24} ${background.snow};
 `;
 
 const Kicker = styled.p`
@@ -38,12 +54,12 @@ const Media: FC<{ media: Media }> = ({ media }) => (
 
 export const HeroTeaser: FC<HeroTeaserProps> = ({ media, kicker, headline }) => {
   return (
-    <article>
+    <Article>
       <Media media={media} />
       <Text>
         <Kicker>{kicker}</Kicker>
         <Hedline>{headline}</Hedline>
       </Text>
-    </article>
+    </Article>
   );
 };
