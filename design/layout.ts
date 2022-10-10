@@ -6,30 +6,30 @@ export const layout = {
     padding: "var(--space-24)",
   },
   border0: {
-    borderWidth: "0px",
+    borderWidth: "var(--border-0)",
   },
   border1: {
-    borderWidth: "1px",
+    borderWidth: "var(--border-1)",
   },
   border2: {
-    borderWidth: "2px",
+    borderWidth: "var(--border-2)",
   },
   border4: {
-    borderWidth: "4px",
+    borderWidth: "var(--border-4)",
   },
   radius4: {
-    borderRadius: "4px",
+    borderRadius: "var(--radius-4)",
   },
   radius8: {
-    borderRadius: "8px",
+    borderRadius: "var(--radius-8)",
   },
   radius24: {
-    borderRadius: "24px",
+    borderRadius: "var(--radius-24)",
   },
   radius100: {
-    borderRadius: "100px",
+    borderRadius: "var(--radius-100)",
   },
   radiusCircle: {
-    borderRadius: "50%",
+    borderRadius: "var(--radius-circle)",
   },
 };

@@ -122,3 +122,26 @@ export const space = css`
     }
   }
 `;
+
+export const padding = css`
+  :global() {
+    :root {
+      --border-0: 0px;
+      --border-1: 1px;
+      --border-2: 2px;
+      --border-4: 4px;
+    }
+  }
+`;
+
+export const border = css`
+  :global() {
+    :root {
+      --radius-4: 4px;
+      --radius-8: 8px;
+      --radius-24: 24px;
+      --radius-100: 100px;
+      --radius-circle: 50%;
+    }
+  }
+`;
