@@ -1,9 +1,8 @@
 import NextImage from "next/image";
 import { styled } from "@linaria/atomic";
 import { headline, kicker } from "design/text";
-import { pull } from "design/layout";
+import { layout } from "design/layout";
 import { background } from "design/color";
-import { border } from "design/border";
 
 import type { FC } from "react";
 import type { StaticImageData } from "next/image";
@@ -38,10 +37,10 @@ const Article = styled.article`
 
 const Text = styled.div`
   position: relative;
-  padding: var(--space-24);
-  ${pull.up24}
+  ${layout.padding24}
+  ${layout.pullUp24}
+  ${layout.radius8}
   ${background.snow};
-  ${border.radius8}
 `;
 
 const Kicker = styled.p`
