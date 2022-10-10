@@ -42,3 +42,27 @@ export const headline = {
     color: "var(--color-salemsfur)",
   },
 };
+
+export const text = {
+  large: {
+    fontSize: "var(--font-size-18)",
+    lineHeight: "var(--line-height-17)",
+    color: "var(--color-trout)",
+  },
+  regular: {
+    fontSize: "var(--font-size-14)",
+    lineHeight: "var(--line-height-15)",
+    color: "var(--color-trout)",
+  },
+  small: {
+    fontSize: "var(--font-size-12)",
+    lineHeight: "var(--line-height-15)",
+    color: "var(--color-trout)",
+  },
+};
+
+export const kicker = {
+  fontSize: "var(--font-size-14)",
+  lineHeight: "var(--line-height-16)",
+  color: "var(--color-trout)",
+};

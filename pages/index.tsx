@@ -1,21 +1,23 @@
-import { styled } from "@linaria/atomic";
-import { headline } from "design/text.objectStyles";
+import { HeroTeaser } from "components/Teaser/Hero";
+import placeholder from "../public/images/palceholder-1280x720.png";
 import "design/bootstrap";
 
 import type { NextPage } from "next";
 
-const Title = styled.h1`
-  ${headline.xlarge}
-
-  &:hover {
-    color: red;
-  }
-`;
-
 const Home: NextPage = () => {
   return (
     <div>
-      <Title href="/">hello world</Title>
+      <HeroTeaser
+        headline="Headline"
+        kicker="Kicker"
+        media={{
+          type: "image",
+          src: placeholder,
+          alt: "placeholder",
+          width: 1280,
+          height: 720,
+        }}
+      />
     </div>
   );
 };
