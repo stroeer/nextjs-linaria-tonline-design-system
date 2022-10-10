@@ -4,7 +4,7 @@ import { headline, kicker } from "design/text";
 import { pull } from "design/layout";
 import { background } from "design/color";
 
-import type { FC, CSSProperties } from "react";
+import type { FC } from "react";
 import type { StaticImageData } from "next/image";
 
 interface HeroTeaserProps {
@@ -23,7 +23,7 @@ interface Media {
 
 const Article = styled.article`
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
   grid-template-columns: var(--space-24) 1fr var(--space-24);
 
   & > *:nth-child(1) {
@@ -48,8 +48,8 @@ const Hedline = styled.p`
   ${headline.large}
 `;
 
-const Media: FC<{ media: Media }> = ({ media }) => (
-  <NextImage layout="responsive" src={media.src} alt={media.alt} width={media.width} height={media.height} />
+const Media: FC<{ media: Media }> = ({ media: { src, alt, width, height } }) => (
+  <NextImage layout="responsive" src={src} alt={alt} width={width} height={height} />
 );
 
 export const HeroTeaser: FC<HeroTeaserProps> = ({ media, kicker, headline }) => {
