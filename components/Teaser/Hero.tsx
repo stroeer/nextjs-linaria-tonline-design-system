@@ -34,12 +34,24 @@ const Article = styled.article`
   }
 `;
 
+const space = { 24: 24 };
+const radius = { 8: 8 };
+const color = { snow: "#ffffff" };
+
 const Text = styled.div`
   position: relative;
   padding: ${t.space24}px;
   margin-top: -${t.space24}px;
   border-radius: ${t.radius8}px;
   background: ${t.colorSnow};
+`;
+
+const Text2 = styled.div`
+  position: relative;
+  padding: ${space[24]}px;
+  margin-top: -${space[24]}px;
+  border-radius: ${radius[8]}px;
+  background: ${color.snow};
 `;
 
 const Kicker = styled.p`
@@ -62,6 +74,7 @@ export const HeroTeaser: FC<HeroTeaserProps> = ({ media, kicker, headline }) => 
         <Kicker>{kicker}</Kicker>
         <Hedline>{headline}</Hedline>
       </Text>
+      <Text2 />
     </Article>
   );
 };
