@@ -38,6 +38,8 @@ const Article = styled.article`
 
 const Text = styled.div`
   position: relative;
+  padding: ${space.s24};
+  padding: var(--space-24);
   ${theme.padding24}
   ${layout.pullUp24}
   ${layout.radius8}

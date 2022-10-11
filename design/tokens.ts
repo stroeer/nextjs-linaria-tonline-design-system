@@ -123,7 +123,7 @@ export const space = css`
   }
 `;
 
-export const padding = css`
+export const border = css`
   :global() {
     :root {
       --border-0: 0px;
@@ -134,7 +134,7 @@ export const padding = css`
   }
 `;
 
-export const border = css`
+export const radius = css`
   :global() {
     :root {
       --radius-4: 4px;
