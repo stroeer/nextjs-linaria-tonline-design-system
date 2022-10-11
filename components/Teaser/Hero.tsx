@@ -3,6 +3,7 @@ import { styled } from "@linaria/atomic";
 import { headline, kicker } from "design/text";
 import { layout } from "design/layout";
 import { background } from "design/color";
+import theme from "design/theme";
 
 import type { FC } from "react";
 import type { StaticImageData } from "next/image";
@@ -37,7 +38,7 @@ const Article = styled.article`
 
 const Text = styled.div`
   position: relative;
-  ${layout.padding24}
+  ${theme.padding24}
   ${layout.pullUp24}
   ${layout.radius8}
   ${background.snow};
