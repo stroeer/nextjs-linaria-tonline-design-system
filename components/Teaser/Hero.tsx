@@ -34,8 +34,8 @@ const Article = styled.article`
   }
 `;
 
-const space = { 24: 24 };
-const radius = { 8: 8 };
+const space = { 24: 24, s24: 24 };
+const radius = { 8: 8, r8: 8 };
 const color = { snow: "#ffffff" };
 const { space24, radius8, colorSnow } = t;
 
@@ -63,6 +63,14 @@ const Text3 = styled.div`
   background: ${color.snow};
 `;
 
+const Text4 = styled.div`
+  position: relative;
+  padding: ${space.s24}px;
+  margin-top: -${space.s24}px;
+  border-radius: ${radius.r8}px;
+  background: ${color.snow};
+`;
+
 const Kicker = styled.p`
   ${kicker}
 `;
@@ -85,6 +93,7 @@ export const HeroTeaser: FC<HeroTeaserProps> = ({ media, kicker, headline }) => 
       </Text>
       <Text2 />
       <Text3 />
+      <Text4 />
     </Article>
   );
 };
