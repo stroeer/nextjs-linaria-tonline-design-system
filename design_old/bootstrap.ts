@@ -1,3 +1,3 @@
+import "./tokens";
 import "./reset";
 import "./defaults";
-import "./fonts";

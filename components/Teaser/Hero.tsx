@@ -1,9 +1,7 @@
 import NextImage from "next/image";
 import { styled } from "@linaria/atomic";
-import { headline, kicker } from "design/text";
-import { layout } from "design/layout";
-import { background } from "design/color";
-import theme from "design/theme";
+import t from "design/tokens";
+import { headline, kicker } from "design/styles";
 
 import type { FC } from "react";
 import type { StaticImageData } from "next/image";
@@ -24,7 +22,7 @@ interface Media {
 
 const Article = styled.article`
   display: grid;
-  grid-template-columns: var(--space-24) 1fr var(--space-24);
+  grid-template-columns: ${t.space24}px 1fr ${t.space24}px;
   grid-template-rows: repeat(2, auto);
 
   & > *:nth-child(1) {
@@ -38,12 +36,10 @@ const Article = styled.article`
 
 const Text = styled.div`
   position: relative;
-  padding: ${space.s24};
-  padding: var(--space-24);
-  ${theme.padding24}
-  ${layout.pullUp24}
-  ${layout.radius8}
-  ${background.snow};
+  padding: ${t.space24}px;
+  margin-top: ${t.space24 * -1}px;
+  border-radius: ${t.radius8}px;
+  background: ${t.colorSnow};
 `;
 
 const Kicker = styled.p`

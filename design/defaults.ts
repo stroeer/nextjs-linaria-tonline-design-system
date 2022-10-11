@@ -1,10 +1,11 @@
-import { css } from "@linaria/core";
+import { css } from "@linaria/atomic";
+import t from "./tokens";
 
 export const defaults = css`
   :global() {
     body {
-      font-family: var(--font-sans);
-      background-color: var(--color-snow);
+      font-family: ${t.fontSans};
+      background-color: ${t.colorSnow};
     }
   }
 `;
