@@ -37,7 +37,7 @@ const Article = styled.article`
 const Text = styled.div`
   position: relative;
   padding: ${t.space24}px;
-  margin-top: ${t.space24 * -1}px;
+  margin-top: -${t.space24}px;
   border-radius: ${t.radius8}px;
   background: ${t.colorSnow};
 `;
