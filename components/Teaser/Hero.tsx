@@ -37,6 +37,7 @@ const Article = styled.article`
 const space = { 24: 24 };
 const radius = { 8: 8 };
 const color = { snow: "#ffffff" };
+const { space24, radius8, colorSnow } = t;
 
 const Text = styled.div`
   position: relative;
@@ -47,6 +48,14 @@ const Text = styled.div`
 `;
 
 const Text2 = styled.div`
+  position: relative;
+  padding: ${space24}px;
+  margin-top: -${space24}px;
+  border-radius: ${radius8}px;
+  background: ${colorSnow};
+`;
+
+const Text3 = styled.div`
   position: relative;
   padding: ${space[24]}px;
   margin-top: -${space[24]}px;
@@ -75,6 +84,7 @@ export const HeroTeaser: FC<HeroTeaserProps> = ({ media, kicker, headline }) => 
         <Hedline>{headline}</Hedline>
       </Text>
       <Text2 />
+      <Text3 />
     </Article>
   );
 };
