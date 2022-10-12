@@ -38,7 +38,7 @@ const Text = styled.div`
   position: relative;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
   grid-gap: ${t.space.s8};
   padding: ${t.space.s24};
   margin-top: -${t.space.s24};
