@@ -1,3 +1,3 @@
-import "./reset";
-import "./defaults";
 import "./fonts";
+import "./cssVars";
+import "./defaults";

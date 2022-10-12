@@ -1,7 +1,7 @@
 import NextImage from "next/image";
 import { styled } from "@linaria/atomic";
-import t from "design/tokens";
 import { headline, kicker } from "design/styles";
+import t from "design/tokens";
 
 import type { FC } from "react";
 import type { StaticImageData } from "next/image";
