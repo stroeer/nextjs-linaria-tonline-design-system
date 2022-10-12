@@ -17,6 +17,8 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@capsizecss/core": "3.0.0",
+    "@capsizecss/metrics": "0.3.0",
     "@linaria/atomic": "4.1.4",
     "@linaria/server": "4.0.0",
     "@linaria/webpack-loader": "4.1.4",
