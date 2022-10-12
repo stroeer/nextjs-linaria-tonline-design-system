@@ -36,6 +36,10 @@ const Article = styled.article`
 
 const Text = styled.div`
   position: relative;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, auto);
+  grid-gap: ${t.space.s8};
   padding: ${t.space.s24};
   margin-top: -${t.space.s24};
   border-radius: ${t.radius.r8};
@@ -43,7 +47,7 @@ const Text = styled.div`
 `;
 
 const Kicker = styled.p`
-  ${kicker}
+  ${kicker};
 `;
 
 const Hedline = styled.p`

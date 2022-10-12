@@ -10,8 +10,8 @@ function capSize<T extends Record<"fontSize" | "lineHeight", any>>(
     {},
     styles,
     createStyleObject({
-      capHeight: fontSize,
-      lineGap: Math.round(fontSize * lineHeight - fontSize),
+      fontSize: fontSize,
+      leading: fontSize * lineHeight,
       fontMetrics,
     })
   );
