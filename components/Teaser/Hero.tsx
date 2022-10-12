@@ -22,7 +22,7 @@ interface Media {
 
 const Article = styled.article`
   display: grid;
-  grid-template-columns: ${t.space24}px 1fr ${t.space24}px;
+  grid-template-columns: ${t.space.s24} 1fr ${t.space.s24};
   grid-template-rows: repeat(2, auto);
 
   & > *:nth-child(1) {
@@ -34,41 +34,12 @@ const Article = styled.article`
   }
 `;
 
-const space = { 24: 24, s24: 24 };
-const radius = { 8: 8, r8: 8 };
-const color = { snow: "#ffffff" };
-const { space24, radius8, colorSnow } = t;
-
 const Text = styled.div`
   position: relative;
-  padding: ${t.space24}px;
-  margin-top: -${t.space24}px;
-  border-radius: ${t.radius8}px;
-  background: ${t.colorSnow};
-`;
-
-const Text2 = styled.div`
-  position: relative;
-  padding: ${space24}px;
-  margin-top: -${space24}px;
-  border-radius: ${radius8}px;
-  background: ${colorSnow};
-`;
-
-const Text3 = styled.div`
-  position: relative;
-  padding: ${space[24]}px;
-  margin-top: -${space[24]}px;
-  border-radius: ${radius[8]}px;
-  background: ${color.snow};
-`;
-
-const Text4 = styled.div`
-  position: relative;
-  padding: ${space.s24}px;
-  margin-top: -${space.s24}px;
-  border-radius: ${radius.r8}px;
-  background: ${color.snow};
+  padding: ${t.space.s24};
+  margin-top: -${t.space.s24};
+  border-radius: ${t.radius.r8};
+  background: ${t.color.snow};
 `;
 
 const Kicker = styled.p`
@@ -91,9 +62,6 @@ export const HeroTeaser: FC<HeroTeaserProps> = ({ media, kicker, headline }) => 
         <Kicker>{kicker}</Kicker>
         <Hedline>{headline}</Hedline>
       </Text>
-      <Text2 />
-      <Text3 />
-      <Text4 />
     </Article>
   );
 };
